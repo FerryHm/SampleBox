@@ -23,7 +23,6 @@ func _unhandled_input(event):
 		camera.rotate_object_local(Vector3.UP, rot_x)
 		camera.rotate_object_local(Vector3.RIGHT, rot_y)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60))
-		print(event.relative)
 
 func _physics_process(delta):
 	# Add the gravity.
